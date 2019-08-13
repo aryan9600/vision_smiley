@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "604063549632",
+    "firebase_url": "https://smiley-face-50bdf.firebaseio.com",
+    "project_id": "smiley-face-50bdf",
+    "storage_bucket": "smiley-face-50bdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604063549632:android:914ae2a71a951d8a",
+        "android_client_info": {
+          "package_name": "com.example.freshers_smiley"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604063549632-f2lmtaodvdquteadni0o1qfr91sq7qjm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPmgt5EtfKFbkki9L5MjSwhyMeokYgmQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604063549632-f2lmtaodvdquteadni0o1qfr91sq7qjm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "604063549632-hpjhc1qhhpm81sguepg5t9kummvd7sav.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.smileyFace"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
