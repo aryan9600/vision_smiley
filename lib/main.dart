@@ -140,13 +140,32 @@ class SmileyPainter extends CustomPainter{
               Math.pi,
               false,
               smilePaint);
-          //Draw the eyes
           canvas.drawCircle(Offset(center.dx - radius / 2, center.dy - radius / 2),
               radius / 8, Paint());
           canvas.drawCircle(Offset(center.dx + radius / 2, center.dy - radius / 2),
               radius / 8, Paint());
         }
+        else if(faces[i].smilingProbability<0.3){
+          final radius =
+              Math.min(faces[i].boundingBox.width, faces[i].boundingBox.height) / 2;
+          final center = faces[i].boundingBox.center;
+          final smilePaint = Paint()
+            ..style = PaintingStyle.stroke
+            ..strokeWidth = radius / 8;
+          canvas.drawCircle(center, radius, paint);
+          canvas.drawArc(
+              Rect.fromCircle(
+                  center: center.translate(0, radius / 8), radius: radius / 2),
+              180,
+              Math.pi/2,
+              false,
+              smilePaint);
 
+          canvas.drawCircle(Offset(center.dx - radius / 2, center.dy - radius / 2),
+              radius / 8, Paint());
+          canvas.drawCircle(Offset(center.dx + radius / 2, center.dy - radius / 2),
+              radius / 8, Paint());
+        }
       }
     }
   }
